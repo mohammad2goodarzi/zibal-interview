@@ -1,3 +1,5 @@
-from django.db import models
+from utils import db
 
-# Create your models here.
+
+# TODO: it's better to be a environment variable
+notification_collection = db['notification']
