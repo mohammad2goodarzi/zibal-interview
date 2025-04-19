@@ -33,6 +33,8 @@ def get_record_as_dict(**kwargs):
     return {'created_at': date, 'merchant_id': merchant_id, 'amount': amount}
 
 
+# this can be used like this:
+# python manage.py initial_data 3000000 1000 --number_of_months 12 --since 2024 --until 2024 --number_of_days 10 --number_of_merchants 500
 class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument(
@@ -70,6 +72,11 @@ class Command(BaseCommand):
         )
 
     def handle(self, *args, **kwargs):
+        # this command generate `data_size` random data
+        # since `--since` year until `--until` year.
+        # from the first month, until the `--number_of_months`'th month
+        # from the first day, until the `--number_of_days`'th day
+        # there are `--number_of_merchants` unique merchant id in these data
         data_size = kwargs['data_size']
         batch_size = kwargs['batch_size']
         t1 = time.time()
