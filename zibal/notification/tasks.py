@@ -7,6 +7,7 @@ from notification.models import notification_collection
 from zibal.celery import app
 
 
+# TODO: I think it's better to update the object when the notification request failed.
 @app.task(autoretry_for=(Exception,), max_retries=30)
 def send_notification(inserted_id):
     obj = notification_collection.find_one({'_id': ObjectId(inserted_id)})

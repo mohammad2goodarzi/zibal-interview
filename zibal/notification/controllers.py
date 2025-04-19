@@ -9,6 +9,7 @@ class NotificationController:
     def __init__(self):
         pass
 
+    # I don't know what a message templates is.
     def notify(self, message, user):
         raise NotImplementedError
 
