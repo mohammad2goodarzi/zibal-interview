@@ -7,6 +7,12 @@ from pymongo.errors import InvalidOperation
 from transaction.models import transaction_collection, transaction_summary_collection
 
 
+# this command will summarize all transactions of a merchant in a single day
+# TODO: it would be better to summarize all transaction in a day.
+# TODO: it would be better to summarize all transaction of a merchant in a week.
+# TODO: it would be better to summarize all transaction in a week.
+# TODO: it would be better to summarize all transaction of a merchant in a month.
+# TODO: it would be better to summarize all transaction in a month.
 class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument(
