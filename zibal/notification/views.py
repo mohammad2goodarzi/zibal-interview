@@ -6,6 +6,7 @@ from notification.models import notification_collection
 from notification.tasks import send_notification
 
 
+# it's just a simple interface.
 class SendNotificationAPIView(APIView):
     def post(self, request, *args, **kwargs):
         now = timezone.now()
