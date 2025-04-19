@@ -1,0 +1,819 @@
+{
+	"info": {
+		"_postman_id": "335dadc4-8810-4c17-a9f2-9d1798e4d52d",
+		"name": "Zibal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10349067"
+	},
+	"item": [
+		{
+			"name": "daily transaction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/transaction/list/?type=count&mode=daily",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"transaction",
+						"list",
+						""
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "count"
+						},
+						{
+							"key": "mode",
+							"value": "daily"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "daily transaction",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/transaction/list/?type=count&mode=daily",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"transaction",
+								"list",
+								""
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "count"
+								},
+								{
+									"key": "mode",
+									"value": "daily"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 19 Apr 2025 05:03:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4901"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"key\": \"2023-01-01\",\n        \"value\": 50041\n    },\n    {\n        \"key\": \"2023-01-02\",\n        \"value\": 49604\n    },\n    {\n        \"key\": \"2023-01-03\",\n        \"value\": 49951\n    },\n    {\n        \"key\": \"2023-01-04\",\n        \"value\": 49916\n    },\n    {\n        \"key\": \"2023-01-05\",\n        \"value\": 50047\n    },\n    {\n        \"key\": \"2023-02-01\",\n        \"value\": 50140\n    },\n    {\n        \"key\": \"2023-02-02\",\n        \"value\": 49912\n    },\n    {\n        \"key\": \"2023-02-03\",\n        \"value\": 49910\n    },\n    {\n        \"key\": \"2023-02-04\",\n        \"value\": 49808\n    },\n    {\n        \"key\": \"2023-02-05\",\n        \"value\": 49654\n    },\n    {\n        \"key\": \"2023-03-01\",\n        \"value\": 50225\n    },\n    {\n        \"key\": \"2023-03-02\",\n        \"value\": 49876\n    },\n    {\n        \"key\": \"2023-03-03\",\n        \"value\": 50262\n    },\n    {\n        \"key\": \"2023-03-04\",\n        \"value\": 49637\n    },\n    {\n        \"key\": \"2023-03-05\",\n        \"value\": 50004\n    },\n    {\n        \"key\": \"2023-04-01\",\n        \"value\": 50280\n    },\n    {\n        \"key\": \"2023-04-02\",\n        \"value\": 50334\n    },\n    {\n        \"key\": \"2023-04-03\",\n        \"value\": 50418\n    },\n    {\n        \"key\": \"2023-04-04\",\n        \"value\": 50076\n    },\n    {\n        \"key\": \"2023-04-05\",\n        \"value\": 49905\n    },\n    {\n        \"key\": \"2024-01-01\",\n        \"value\": 25128\n    },\n    {\n        \"key\": \"2024-01-02\",\n        \"value\": 25117\n    },\n    {\n        \"key\": \"2024-01-03\",\n        \"value\": 24864\n    },\n    {\n        \"key\": \"2024-01-04\",\n        \"value\": 25260\n    },\n    {\n        \"key\": \"2024-01-05\",\n        \"value\": 24854\n    },\n    {\n        \"key\": \"2024-01-06\",\n        \"value\": 24998\n    },\n    {\n        \"key\": \"2024-01-07\",\n        \"value\": 25003\n    },\n    {\n        \"key\": \"2024-01-08\",\n        \"value\": 24931\n    },\n    {\n        \"key\": \"2024-01-09\",\n        \"value\": 25170\n    },\n    {\n        \"key\": \"2024-01-10\",\n        \"value\": 25280\n    },\n    {\n        \"key\": \"2024-02-01\",\n        \"value\": 25027\n    },\n    {\n        \"key\": \"2024-02-02\",\n        \"value\": 25163\n    },\n    {\n        \"key\": \"2024-02-03\",\n        \"value\": 25132\n    },\n    {\n        \"key\": \"2024-02-04\",\n        \"value\": 24720\n    },\n    {\n        \"key\": \"2024-02-05\",\n        \"value\": 25009\n    },\n    {\n        \"key\": \"2024-02-06\",\n        \"value\": 25325\n    },\n    {\n        \"key\": \"2024-02-07\",\n        \"value\": 25094\n    },\n    {\n        \"key\": \"2024-02-08\",\n        \"value\": 24940\n    },\n    {\n        \"key\": \"2024-02-09\",\n        \"value\": 24899\n    },\n    {\n        \"key\": \"2024-02-10\",\n        \"value\": 24935\n    },\n    {\n        \"key\": \"2024-03-01\",\n        \"value\": 24774\n    },\n    {\n        \"key\": \"2024-03-02\",\n        \"value\": 25038\n    },\n    {\n        \"key\": \"2024-03-03\",\n        \"value\": 24742\n    },\n    {\n        \"key\": \"2024-03-04\",\n        \"value\": 25076\n    },\n    {\n        \"key\": \"2024-03-05\",\n        \"value\": 25078\n    },\n    {\n        \"key\": \"2024-03-06\",\n        \"value\": 24568\n    },\n    {\n        \"key\": \"2024-03-07\",\n        \"value\": 24997\n    },\n    {\n        \"key\": \"2024-03-08\",\n        \"value\": 25111\n    },\n    {\n        \"key\": \"2024-03-09\",\n        \"value\": 24960\n    },\n    {\n        \"key\": \"2024-03-10\",\n        \"value\": 24966\n    },\n    {\n        \"key\": \"2024-04-01\",\n        \"value\": 24823\n    },\n    {\n        \"key\": \"2024-04-02\",\n        \"value\": 24958\n    },\n    {\n        \"key\": \"2024-04-03\",\n        \"value\": 25285\n    },\n    {\n        \"key\": \"2024-04-04\",\n        \"value\": 24984\n    },\n    {\n        \"key\": \"2024-04-05\",\n        \"value\": 25109\n    },\n    {\n        \"key\": \"2024-04-06\",\n        \"value\": 24922\n    },\n    {\n        \"key\": \"2024-04-07\",\n        \"value\": 25062\n    },\n    {\n        \"key\": \"2024-04-08\",\n        \"value\": 25229\n    },\n    {\n        \"key\": \"2024-04-09\",\n        \"value\": 24846\n    },\n    {\n        \"key\": \"2024-04-10\",\n        \"value\": 25095\n    },\n    {\n        \"key\": \"2024-05-01\",\n        \"value\": 24987\n    },\n    {\n        \"key\": \"2024-05-02\",\n        \"value\": 24956\n    },\n    {\n        \"key\": \"2024-05-03\",\n        \"value\": 25119\n    },\n    {\n        \"key\": \"2024-05-04\",\n        \"value\": 25133\n    },\n    {\n        \"key\": \"2024-05-05\",\n        \"value\": 25114\n    },\n    {\n        \"key\": \"2024-05-06\",\n        \"value\": 24651\n    },\n    {\n        \"key\": \"2024-05-07\",\n        \"value\": 25241\n    },\n    {\n        \"key\": \"2024-05-08\",\n        \"value\": 24858\n    },\n    {\n        \"key\": \"2024-05-09\",\n        \"value\": 25176\n    },\n    {\n        \"key\": \"2024-05-10\",\n        \"value\": 24963\n    },\n    {\n        \"key\": \"2024-06-01\",\n        \"value\": 25346\n    },\n    {\n        \"key\": \"2024-06-02\",\n        \"value\": 25043\n    },\n    {\n        \"key\": \"2024-06-03\",\n        \"value\": 25076\n    },\n    {\n        \"key\": \"2024-06-04\",\n        \"value\": 24744\n    },\n    {\n        \"key\": \"2024-06-05\",\n        \"value\": 24888\n    },\n    {\n        \"key\": \"2024-06-06\",\n        \"value\": 25046\n    },\n    {\n        \"key\": \"2024-06-07\",\n        \"value\": 25102\n    },\n    {\n        \"key\": \"2024-06-08\",\n        \"value\": 24803\n    },\n    {\n        \"key\": \"2024-06-09\",\n        \"value\": 24896\n    },\n    {\n        \"key\": \"2024-06-10\",\n        \"value\": 24954\n    },\n    {\n        \"key\": \"2024-07-01\",\n        \"value\": 25237\n    },\n    {\n        \"key\": \"2024-07-02\",\n        \"value\": 24919\n    },\n    {\n        \"key\": \"2024-07-03\",\n        \"value\": 25059\n    },\n    {\n        \"key\": \"2024-07-04\",\n        \"value\": 25106\n    },\n    {\n        \"key\": \"2024-07-05\",\n        \"value\": 24992\n    },\n    {\n        \"key\": \"2024-07-06\",\n        \"value\": 24936\n    },\n    {\n        \"key\": \"2024-07-07\",\n        \"value\": 24934\n    },\n    {\n        \"key\": \"2024-07-08\",\n        \"value\": 24777\n    },\n    {\n        \"key\": \"2024-07-09\",\n        \"value\": 25128\n    },\n    {\n        \"key\": \"2024-07-10\",\n        \"value\": 25017\n    },\n    {\n        \"key\": \"2024-08-01\",\n        \"value\": 25117\n    },\n    {\n        \"key\": \"2024-08-02\",\n        \"value\": 24927\n    },\n    {\n        \"key\": \"2024-08-03\",\n        \"value\": 24860\n    },\n    {\n        \"key\": \"2024-08-04\",\n        \"value\": 25071\n    },\n    {\n        \"key\": \"2024-08-05\",\n        \"value\": 25039\n    },\n    {\n        \"key\": \"2024-08-06\",\n        \"value\": 25322\n    },\n    {\n        \"key\": \"2024-08-07\",\n        \"value\": 24966\n    },\n    {\n        \"key\": \"2024-08-08\",\n        \"value\": 24950\n    },\n    {\n        \"key\": \"2024-08-09\",\n        \"value\": 24836\n    },\n    {\n        \"key\": \"2024-08-10\",\n        \"value\": 25112\n    },\n    {\n        \"key\": \"2024-09-01\",\n        \"value\": 24926\n    },\n    {\n        \"key\": \"2024-09-02\",\n        \"value\": 25126\n    },\n    {\n        \"key\": \"2024-09-03\",\n        \"value\": 25365\n    },\n    {\n        \"key\": \"2024-09-04\",\n        \"value\": 24744\n    },\n    {\n        \"key\": \"2024-09-05\",\n        \"value\": 25411\n    },\n    {\n        \"key\": \"2024-09-06\",\n        \"value\": 24954\n    },\n    {\n        \"key\": \"2024-09-07\",\n        \"value\": 25121\n    },\n    {\n        \"key\": \"2024-09-08\",\n        \"value\": 24966\n    },\n    {\n        \"key\": \"2024-09-09\",\n        \"value\": 25000\n    },\n    {\n        \"key\": \"2024-09-10\",\n        \"value\": 25046\n    },\n    {\n        \"key\": \"2024-10-01\",\n        \"value\": 24879\n    },\n    {\n        \"key\": \"2024-10-02\",\n        \"value\": 24816\n    },\n    {\n        \"key\": \"2024-10-03\",\n        \"value\": 24883\n    },\n    {\n        \"key\": \"2024-10-04\",\n        \"value\": 25098\n    },\n    {\n        \"key\": \"2024-10-05\",\n        \"value\": 24710\n    },\n    {\n        \"key\": \"2024-10-06\",\n        \"value\": 24980\n    },\n    {\n        \"key\": \"2024-10-07\",\n        \"value\": 24928\n    },\n    {\n        \"key\": \"2024-10-08\",\n        \"value\": 25116\n    },\n    {\n        \"key\": \"2024-10-09\",\n        \"value\": 24982\n    },\n    {\n        \"key\": \"2024-10-10\",\n        \"value\": 24696\n    },\n    {\n        \"key\": \"2024-11-01\",\n        \"value\": 24830\n    },\n    {\n        \"key\": \"2024-11-02\",\n        \"value\": 24983\n    },\n    {\n        \"key\": \"2024-11-03\",\n        \"value\": 25054\n    },\n    {\n        \"key\": \"2024-11-04\",\n        \"value\": 24917\n    },\n    {\n        \"key\": \"2024-11-05\",\n        \"value\": 25003\n    },\n    {\n        \"key\": \"2024-11-06\",\n        \"value\": 24932\n    },\n    {\n        \"key\": \"2024-11-07\",\n        \"value\": 25027\n    },\n    {\n        \"key\": \"2024-11-08\",\n        \"value\": 25207\n    },\n    {\n        \"key\": \"2024-11-09\",\n        \"value\": 25068\n    },\n    {\n        \"key\": \"2024-11-10\",\n        \"value\": 24781\n    },\n    {\n        \"key\": \"2024-12-01\",\n        \"value\": 24672\n    },\n    {\n        \"key\": \"2024-12-02\",\n        \"value\": 25330\n    },\n    {\n        \"key\": \"2024-12-03\",\n        \"value\": 25019\n    },\n    {\n        \"key\": \"2024-12-04\",\n        \"value\": 25023\n    },\n    {\n        \"key\": \"2024-12-05\",\n        \"value\": 24956\n    },\n    {\n        \"key\": \"2024-12-06\",\n        \"value\": 24866\n    },\n    {\n        \"key\": \"2024-12-07\",\n        \"value\": 24893\n    },\n    {\n        \"key\": \"2024-12-08\",\n        \"value\": 25113\n    },\n    {\n        \"key\": \"2024-12-09\",\n        \"value\": 24645\n    },\n    {\n        \"key\": \"2024-12-10\",\n        \"value\": 25061\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "weekly transaction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/transaction/list/?type=count&mode=weekly",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"transaction",
+						"list",
+						""
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "count"
+						},
+						{
+							"key": "mode",
+							"value": "weekly"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "weekly transaction",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/transaction/list/?type=count&mode=weekly",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"transaction",
+								"list",
+								""
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "count"
+								},
+								{
+									"key": "mode",
+									"value": "weekly"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 19 Apr 2025 05:04:22 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1109"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"key\": \"2023-01\",\n        \"value\": 249559\n    },\n    {\n        \"key\": \"2023-05\",\n        \"value\": 199770\n    },\n    {\n        \"key\": \"2023-06\",\n        \"value\": 49654\n    },\n    {\n        \"key\": \"2023-09\",\n        \"value\": 200000\n    },\n    {\n        \"key\": \"2023-10\",\n        \"value\": 50004\n    },\n    {\n        \"key\": \"2023-13\",\n        \"value\": 50280\n    },\n    {\n        \"key\": \"2023-14\",\n        \"value\": 200733\n    },\n    {\n        \"key\": \"2024-00\",\n        \"value\": 150221\n    },\n    {\n        \"key\": \"2024-01\",\n        \"value\": 100384\n    },\n    {\n        \"key\": \"2024-04\",\n        \"value\": 75322\n    },\n    {\n        \"key\": \"2024-05\",\n        \"value\": 174922\n    },\n    {\n        \"key\": \"2024-08\",\n        \"value\": 49812\n    },\n    {\n        \"key\": \"2024-09\",\n        \"value\": 174532\n    },\n    {\n        \"key\": \"2024-10\",\n        \"value\": 24966\n    },\n    {\n        \"key\": \"2024-13\",\n        \"value\": 150081\n    },\n    {\n        \"key\": \"2024-14\",\n        \"value\": 100232\n    },\n    {\n        \"key\": \"2024-17\",\n        \"value\": 100195\n    },\n    {\n        \"key\": \"2024-18\",\n        \"value\": 150003\n    },\n    {\n        \"key\": \"2024-21\",\n        \"value\": 25346\n    },\n    {\n        \"key\": \"2024-22\",\n        \"value\": 174702\n    },\n    {\n        \"key\": \"2024-23\",\n        \"value\": 49850\n    },\n    {\n        \"key\": \"2024-26\",\n        \"value\": 150249\n    },\n    {\n        \"key\": \"2024-27\",\n        \"value\": 99856\n    },\n    {\n        \"key\": \"2024-30\",\n        \"value\": 74904\n    },\n    {\n        \"key\": \"2024-31\",\n        \"value\": 175296\n    },\n    {\n        \"key\": \"2024-35\",\n        \"value\": 175647\n    },\n    {\n        \"key\": \"2024-36\",\n        \"value\": 75012\n    },\n    {\n        \"key\": \"2024-39\",\n        \"value\": 124386\n    },\n    {\n        \"key\": \"2024-40\",\n        \"value\": 124702\n    },\n    {\n        \"key\": \"2024-43\",\n        \"value\": 49813\n    },\n    {\n        \"key\": \"2024-44\",\n        \"value\": 175208\n    },\n    {\n        \"key\": \"2024-45\",\n        \"value\": 24781\n    },\n    {\n        \"key\": \"2024-48\",\n        \"value\": 174759\n    },\n    {\n        \"key\": \"2024-49\",\n        \"value\": 74819\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "monthly transaction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/transaction/list/?type=count&mode=monthly",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"transaction",
+						"list",
+						""
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "count"
+						},
+						{
+							"key": "mode",
+							"value": "monthly"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "monthly transaction",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/transaction/list/?type=count&mode=monthly",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"transaction",
+								"list",
+								""
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "count"
+								},
+								{
+									"key": "mode",
+									"value": "monthly"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 19 Apr 2025 05:04:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "529"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"key\": \"2023-01\",\n        \"value\": 249559\n    },\n    {\n        \"key\": \"2023-02\",\n        \"value\": 249424\n    },\n    {\n        \"key\": \"2023-03\",\n        \"value\": 250004\n    },\n    {\n        \"key\": \"2023-04\",\n        \"value\": 251013\n    },\n    {\n        \"key\": \"2024-01\",\n        \"value\": 250605\n    },\n    {\n        \"key\": \"2024-02\",\n        \"value\": 250244\n    },\n    {\n        \"key\": \"2024-03\",\n        \"value\": 249310\n    },\n    {\n        \"key\": \"2024-04\",\n        \"value\": 250313\n    },\n    {\n        \"key\": \"2024-05\",\n        \"value\": 250198\n    },\n    {\n        \"key\": \"2024-06\",\n        \"value\": 249898\n    },\n    {\n        \"key\": \"2024-07\",\n        \"value\": 250105\n    },\n    {\n        \"key\": \"2024-08\",\n        \"value\": 250200\n    },\n    {\n        \"key\": \"2024-09\",\n        \"value\": 250659\n    },\n    {\n        \"key\": \"2024-10\",\n        \"value\": 249088\n    },\n    {\n        \"key\": \"2024-11\",\n        \"value\": 249802\n    },\n    {\n        \"key\": \"2024-12\",\n        \"value\": 249578\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "daily transaction v2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/transaction/list/v2/?type=count&mode=daily",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"transaction",
+						"list",
+						"v2",
+						""
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "count"
+						},
+						{
+							"key": "mode",
+							"value": "daily"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "daily transaction v2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/transaction/list/v2/?type=count&mode=daily",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"transaction",
+								"list",
+								"v2",
+								""
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "count"
+								},
+								{
+									"key": "mode",
+									"value": "daily"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 19 Apr 2025 05:08:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4901"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"key\": \"2023-01-01\",\n        \"value\": 50041\n    },\n    {\n        \"key\": \"2023-01-02\",\n        \"value\": 49604\n    },\n    {\n        \"key\": \"2023-01-03\",\n        \"value\": 49951\n    },\n    {\n        \"key\": \"2023-01-04\",\n        \"value\": 49916\n    },\n    {\n        \"key\": \"2023-01-05\",\n        \"value\": 50047\n    },\n    {\n        \"key\": \"2023-02-01\",\n        \"value\": 50140\n    },\n    {\n        \"key\": \"2023-02-02\",\n        \"value\": 49912\n    },\n    {\n        \"key\": \"2023-02-03\",\n        \"value\": 49910\n    },\n    {\n        \"key\": \"2023-02-04\",\n        \"value\": 49808\n    },\n    {\n        \"key\": \"2023-02-05\",\n        \"value\": 49654\n    },\n    {\n        \"key\": \"2023-03-01\",\n        \"value\": 50225\n    },\n    {\n        \"key\": \"2023-03-02\",\n        \"value\": 49876\n    },\n    {\n        \"key\": \"2023-03-03\",\n        \"value\": 50262\n    },\n    {\n        \"key\": \"2023-03-04\",\n        \"value\": 49637\n    },\n    {\n        \"key\": \"2023-03-05\",\n        \"value\": 50004\n    },\n    {\n        \"key\": \"2023-04-01\",\n        \"value\": 50280\n    },\n    {\n        \"key\": \"2023-04-02\",\n        \"value\": 50334\n    },\n    {\n        \"key\": \"2023-04-03\",\n        \"value\": 50418\n    },\n    {\n        \"key\": \"2023-04-04\",\n        \"value\": 50076\n    },\n    {\n        \"key\": \"2023-04-05\",\n        \"value\": 49905\n    },\n    {\n        \"key\": \"2024-01-01\",\n        \"value\": 25128\n    },\n    {\n        \"key\": \"2024-01-02\",\n        \"value\": 25117\n    },\n    {\n        \"key\": \"2024-01-03\",\n        \"value\": 24864\n    },\n    {\n        \"key\": \"2024-01-04\",\n        \"value\": 25260\n    },\n    {\n        \"key\": \"2024-01-05\",\n        \"value\": 24854\n    },\n    {\n        \"key\": \"2024-01-06\",\n        \"value\": 24998\n    },\n    {\n        \"key\": \"2024-01-07\",\n        \"value\": 25003\n    },\n    {\n        \"key\": \"2024-01-08\",\n        \"value\": 24931\n    },\n    {\n        \"key\": \"2024-01-09\",\n        \"value\": 25170\n    },\n    {\n        \"key\": \"2024-01-10\",\n        \"value\": 25280\n    },\n    {\n        \"key\": \"2024-02-01\",\n        \"value\": 25027\n    },\n    {\n        \"key\": \"2024-02-02\",\n        \"value\": 25163\n    },\n    {\n        \"key\": \"2024-02-03\",\n        \"value\": 25132\n    },\n    {\n        \"key\": \"2024-02-04\",\n        \"value\": 24720\n    },\n    {\n        \"key\": \"2024-02-05\",\n        \"value\": 25009\n    },\n    {\n        \"key\": \"2024-02-06\",\n        \"value\": 25325\n    },\n    {\n        \"key\": \"2024-02-07\",\n        \"value\": 25094\n    },\n    {\n        \"key\": \"2024-02-08\",\n        \"value\": 24940\n    },\n    {\n        \"key\": \"2024-02-09\",\n        \"value\": 24899\n    },\n    {\n        \"key\": \"2024-02-10\",\n        \"value\": 24935\n    },\n    {\n        \"key\": \"2024-03-01\",\n        \"value\": 24774\n    },\n    {\n        \"key\": \"2024-03-02\",\n        \"value\": 25038\n    },\n    {\n        \"key\": \"2024-03-03\",\n        \"value\": 24742\n    },\n    {\n        \"key\": \"2024-03-04\",\n        \"value\": 25076\n    },\n    {\n        \"key\": \"2024-03-05\",\n        \"value\": 25078\n    },\n    {\n        \"key\": \"2024-03-06\",\n        \"value\": 24568\n    },\n    {\n        \"key\": \"2024-03-07\",\n        \"value\": 24997\n    },\n    {\n        \"key\": \"2024-03-08\",\n        \"value\": 25111\n    },\n    {\n        \"key\": \"2024-03-09\",\n        \"value\": 24960\n    },\n    {\n        \"key\": \"2024-03-10\",\n        \"value\": 24966\n    },\n    {\n        \"key\": \"2024-04-01\",\n        \"value\": 24823\n    },\n    {\n        \"key\": \"2024-04-02\",\n        \"value\": 24958\n    },\n    {\n        \"key\": \"2024-04-03\",\n        \"value\": 25285\n    },\n    {\n        \"key\": \"2024-04-04\",\n        \"value\": 24984\n    },\n    {\n        \"key\": \"2024-04-05\",\n        \"value\": 25109\n    },\n    {\n        \"key\": \"2024-04-06\",\n        \"value\": 24922\n    },\n    {\n        \"key\": \"2024-04-07\",\n        \"value\": 25062\n    },\n    {\n        \"key\": \"2024-04-08\",\n        \"value\": 25229\n    },\n    {\n        \"key\": \"2024-04-09\",\n        \"value\": 24846\n    },\n    {\n        \"key\": \"2024-04-10\",\n        \"value\": 25095\n    },\n    {\n        \"key\": \"2024-05-01\",\n        \"value\": 24987\n    },\n    {\n        \"key\": \"2024-05-02\",\n        \"value\": 24956\n    },\n    {\n        \"key\": \"2024-05-03\",\n        \"value\": 25119\n    },\n    {\n        \"key\": \"2024-05-04\",\n        \"value\": 25133\n    },\n    {\n        \"key\": \"2024-05-05\",\n        \"value\": 25114\n    },\n    {\n        \"key\": \"2024-05-06\",\n        \"value\": 24651\n    },\n    {\n        \"key\": \"2024-05-07\",\n        \"value\": 25241\n    },\n    {\n        \"key\": \"2024-05-08\",\n        \"value\": 24858\n    },\n    {\n        \"key\": \"2024-05-09\",\n        \"value\": 25176\n    },\n    {\n        \"key\": \"2024-05-10\",\n        \"value\": 24963\n    },\n    {\n        \"key\": \"2024-06-01\",\n        \"value\": 25346\n    },\n    {\n        \"key\": \"2024-06-02\",\n        \"value\": 25043\n    },\n    {\n        \"key\": \"2024-06-03\",\n        \"value\": 25076\n    },\n    {\n        \"key\": \"2024-06-04\",\n        \"value\": 24744\n    },\n    {\n        \"key\": \"2024-06-05\",\n        \"value\": 24888\n    },\n    {\n        \"key\": \"2024-06-06\",\n        \"value\": 25046\n    },\n    {\n        \"key\": \"2024-06-07\",\n        \"value\": 25102\n    },\n    {\n        \"key\": \"2024-06-08\",\n        \"value\": 24803\n    },\n    {\n        \"key\": \"2024-06-09\",\n        \"value\": 24896\n    },\n    {\n        \"key\": \"2024-06-10\",\n        \"value\": 24954\n    },\n    {\n        \"key\": \"2024-07-01\",\n        \"value\": 25237\n    },\n    {\n        \"key\": \"2024-07-02\",\n        \"value\": 24919\n    },\n    {\n        \"key\": \"2024-07-03\",\n        \"value\": 25059\n    },\n    {\n        \"key\": \"2024-07-04\",\n        \"value\": 25106\n    },\n    {\n        \"key\": \"2024-07-05\",\n        \"value\": 24992\n    },\n    {\n        \"key\": \"2024-07-06\",\n        \"value\": 24936\n    },\n    {\n        \"key\": \"2024-07-07\",\n        \"value\": 24934\n    },\n    {\n        \"key\": \"2024-07-08\",\n        \"value\": 24777\n    },\n    {\n        \"key\": \"2024-07-09\",\n        \"value\": 25128\n    },\n    {\n        \"key\": \"2024-07-10\",\n        \"value\": 25017\n    },\n    {\n        \"key\": \"2024-08-01\",\n        \"value\": 25117\n    },\n    {\n        \"key\": \"2024-08-02\",\n        \"value\": 24927\n    },\n    {\n        \"key\": \"2024-08-03\",\n        \"value\": 24860\n    },\n    {\n        \"key\": \"2024-08-04\",\n        \"value\": 25071\n    },\n    {\n        \"key\": \"2024-08-05\",\n        \"value\": 25039\n    },\n    {\n        \"key\": \"2024-08-06\",\n        \"value\": 25322\n    },\n    {\n        \"key\": \"2024-08-07\",\n        \"value\": 24966\n    },\n    {\n        \"key\": \"2024-08-08\",\n        \"value\": 24950\n    },\n    {\n        \"key\": \"2024-08-09\",\n        \"value\": 24836\n    },\n    {\n        \"key\": \"2024-08-10\",\n        \"value\": 25112\n    },\n    {\n        \"key\": \"2024-09-01\",\n        \"value\": 24926\n    },\n    {\n        \"key\": \"2024-09-02\",\n        \"value\": 25126\n    },\n    {\n        \"key\": \"2024-09-03\",\n        \"value\": 25365\n    },\n    {\n        \"key\": \"2024-09-04\",\n        \"value\": 24744\n    },\n    {\n        \"key\": \"2024-09-05\",\n        \"value\": 25411\n    },\n    {\n        \"key\": \"2024-09-06\",\n        \"value\": 24954\n    },\n    {\n        \"key\": \"2024-09-07\",\n        \"value\": 25121\n    },\n    {\n        \"key\": \"2024-09-08\",\n        \"value\": 24966\n    },\n    {\n        \"key\": \"2024-09-09\",\n        \"value\": 25000\n    },\n    {\n        \"key\": \"2024-09-10\",\n        \"value\": 25046\n    },\n    {\n        \"key\": \"2024-10-01\",\n        \"value\": 24879\n    },\n    {\n        \"key\": \"2024-10-02\",\n        \"value\": 24816\n    },\n    {\n        \"key\": \"2024-10-03\",\n        \"value\": 24883\n    },\n    {\n        \"key\": \"2024-10-04\",\n        \"value\": 25098\n    },\n    {\n        \"key\": \"2024-10-05\",\n        \"value\": 24710\n    },\n    {\n        \"key\": \"2024-10-06\",\n        \"value\": 24980\n    },\n    {\n        \"key\": \"2024-10-07\",\n        \"value\": 24928\n    },\n    {\n        \"key\": \"2024-10-08\",\n        \"value\": 25116\n    },\n    {\n        \"key\": \"2024-10-09\",\n        \"value\": 24982\n    },\n    {\n        \"key\": \"2024-10-10\",\n        \"value\": 24696\n    },\n    {\n        \"key\": \"2024-11-01\",\n        \"value\": 24830\n    },\n    {\n        \"key\": \"2024-11-02\",\n        \"value\": 24983\n    },\n    {\n        \"key\": \"2024-11-03\",\n        \"value\": 25054\n    },\n    {\n        \"key\": \"2024-11-04\",\n        \"value\": 24917\n    },\n    {\n        \"key\": \"2024-11-05\",\n        \"value\": 25003\n    },\n    {\n        \"key\": \"2024-11-06\",\n        \"value\": 24932\n    },\n    {\n        \"key\": \"2024-11-07\",\n        \"value\": 25027\n    },\n    {\n        \"key\": \"2024-11-08\",\n        \"value\": 25207\n    },\n    {\n        \"key\": \"2024-11-09\",\n        \"value\": 25068\n    },\n    {\n        \"key\": \"2024-11-10\",\n        \"value\": 24781\n    },\n    {\n        \"key\": \"2024-12-01\",\n        \"value\": 24672\n    },\n    {\n        \"key\": \"2024-12-02\",\n        \"value\": 25330\n    },\n    {\n        \"key\": \"2024-12-03\",\n        \"value\": 25019\n    },\n    {\n        \"key\": \"2024-12-04\",\n        \"value\": 25023\n    },\n    {\n        \"key\": \"2024-12-05\",\n        \"value\": 24956\n    },\n    {\n        \"key\": \"2024-12-06\",\n        \"value\": 24866\n    },\n    {\n        \"key\": \"2024-12-07\",\n        \"value\": 24893\n    },\n    {\n        \"key\": \"2024-12-08\",\n        \"value\": 25113\n    },\n    {\n        \"key\": \"2024-12-09\",\n        \"value\": 24645\n    },\n    {\n        \"key\": \"2024-12-10\",\n        \"value\": 25061\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "weekly transaction v2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/transaction/list/v2/?type=count&mode=weekly",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"transaction",
+						"list",
+						"v2",
+						""
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "count"
+						},
+						{
+							"key": "mode",
+							"value": "weekly"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "weekly transaction v2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/transaction/list/v2/?type=count&mode=weekly",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"transaction",
+								"list",
+								"v2",
+								""
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "count"
+								},
+								{
+									"key": "mode",
+									"value": "weekly"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 19 Apr 2025 05:10:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1109"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"key\": \"2023-01\",\n        \"value\": 249559\n    },\n    {\n        \"key\": \"2023-05\",\n        \"value\": 199770\n    },\n    {\n        \"key\": \"2023-06\",\n        \"value\": 49654\n    },\n    {\n        \"key\": \"2023-09\",\n        \"value\": 200000\n    },\n    {\n        \"key\": \"2023-10\",\n        \"value\": 50004\n    },\n    {\n        \"key\": \"2023-13\",\n        \"value\": 50280\n    },\n    {\n        \"key\": \"2023-14\",\n        \"value\": 200733\n    },\n    {\n        \"key\": \"2024-00\",\n        \"value\": 150221\n    },\n    {\n        \"key\": \"2024-01\",\n        \"value\": 100384\n    },\n    {\n        \"key\": \"2024-04\",\n        \"value\": 75322\n    },\n    {\n        \"key\": \"2024-05\",\n        \"value\": 174922\n    },\n    {\n        \"key\": \"2024-08\",\n        \"value\": 49812\n    },\n    {\n        \"key\": \"2024-09\",\n        \"value\": 174532\n    },\n    {\n        \"key\": \"2024-10\",\n        \"value\": 24966\n    },\n    {\n        \"key\": \"2024-13\",\n        \"value\": 150081\n    },\n    {\n        \"key\": \"2024-14\",\n        \"value\": 100232\n    },\n    {\n        \"key\": \"2024-17\",\n        \"value\": 100195\n    },\n    {\n        \"key\": \"2024-18\",\n        \"value\": 150003\n    },\n    {\n        \"key\": \"2024-21\",\n        \"value\": 25346\n    },\n    {\n        \"key\": \"2024-22\",\n        \"value\": 174702\n    },\n    {\n        \"key\": \"2024-23\",\n        \"value\": 49850\n    },\n    {\n        \"key\": \"2024-26\",\n        \"value\": 150249\n    },\n    {\n        \"key\": \"2024-27\",\n        \"value\": 99856\n    },\n    {\n        \"key\": \"2024-30\",\n        \"value\": 74904\n    },\n    {\n        \"key\": \"2024-31\",\n        \"value\": 175296\n    },\n    {\n        \"key\": \"2024-35\",\n        \"value\": 175647\n    },\n    {\n        \"key\": \"2024-36\",\n        \"value\": 75012\n    },\n    {\n        \"key\": \"2024-39\",\n        \"value\": 124386\n    },\n    {\n        \"key\": \"2024-40\",\n        \"value\": 124702\n    },\n    {\n        \"key\": \"2024-43\",\n        \"value\": 49813\n    },\n    {\n        \"key\": \"2024-44\",\n        \"value\": 175208\n    },\n    {\n        \"key\": \"2024-45\",\n        \"value\": 24781\n    },\n    {\n        \"key\": \"2024-48\",\n        \"value\": 174759\n    },\n    {\n        \"key\": \"2024-49\",\n        \"value\": 74819\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "monthly transaction v2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/transaction/list/v2/?type=count&mode=monthly",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"transaction",
+						"list",
+						"v2",
+						""
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "count"
+						},
+						{
+							"key": "mode",
+							"value": "monthly"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "monthly transaction v2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/transaction/list/v2/?type=count&mode=monthly",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"transaction",
+								"list",
+								"v2",
+								""
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "count"
+								},
+								{
+									"key": "mode",
+									"value": "monthly"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 19 Apr 2025 05:09:53 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "529"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"key\": \"2023-01\",\n        \"value\": 249559\n    },\n    {\n        \"key\": \"2023-02\",\n        \"value\": 249424\n    },\n    {\n        \"key\": \"2023-03\",\n        \"value\": 250004\n    },\n    {\n        \"key\": \"2023-04\",\n        \"value\": 251013\n    },\n    {\n        \"key\": \"2024-01\",\n        \"value\": 250605\n    },\n    {\n        \"key\": \"2024-02\",\n        \"value\": 250244\n    },\n    {\n        \"key\": \"2024-03\",\n        \"value\": 249310\n    },\n    {\n        \"key\": \"2024-04\",\n        \"value\": 250313\n    },\n    {\n        \"key\": \"2024-05\",\n        \"value\": 250198\n    },\n    {\n        \"key\": \"2024-06\",\n        \"value\": 249898\n    },\n    {\n        \"key\": \"2024-07\",\n        \"value\": 250105\n    },\n    {\n        \"key\": \"2024-08\",\n        \"value\": 250200\n    },\n    {\n        \"key\": \"2024-09\",\n        \"value\": 250659\n    },\n    {\n        \"key\": \"2024-10\",\n        \"value\": 249088\n    },\n    {\n        \"key\": \"2024-11\",\n        \"value\": 249802\n    },\n    {\n        \"key\": \"2024-12\",\n        \"value\": 249578\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "send notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": 987654,\r\n    \"message\": \"Hello World!\",\r\n    \"media\": [\r\n        \"sms\",\r\n        \"telegram\",\r\n        \"email\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/notification/send/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"notification",
+						"send",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "send notification",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": 987654,\r\n    \"message\": \"Hello World!\",\r\n    \"media\": [\r\n        \"sms\",\r\n        \"telegram\",\r\n        \"email\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/notification/send/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"notification",
+								"send",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 19 Apr 2025 05:13:12 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "\"notification will be sent.\""
+				}
+			]
+		}
+	]
+}
