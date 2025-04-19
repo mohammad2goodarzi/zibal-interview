@@ -1,3 +1,4 @@
-from django.db import models
+from utils import db
 
-# Create your models here.
+
+transaction_collection = db['transaction']
