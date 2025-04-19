@@ -7,6 +7,9 @@ from pymongo.errors import InvalidOperation
 from transaction.models import transaction_collection, transaction_summary_collection
 
 
+# this can be used like this:
+# python manage.py summarize "2025-04-19"
+
 # this command will summarize all transactions of a merchant in a single day
 # TODO: it would be better to summarize all transaction in a day.
 # TODO: it would be better to summarize all transaction of a merchant in a week.

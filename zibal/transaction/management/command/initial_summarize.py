@@ -3,6 +3,8 @@ from datetime import datetime, timedelta
 from django.core.management import BaseCommand, call_command
 
 
+# this can be used like this:
+# python manage.py initial_summarize "2025-01-01" "2025-04-18"
 class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument(
