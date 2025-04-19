@@ -22,3 +22,13 @@ def send_notification(inserted_id):
         }
     )
     return result
+
+
+# This should be a periodic task.
+# I know there is a way to do this with mongo db.
+# one day I'll do this.
+@app.task()
+def auto_resend_notification():
+    objects = notification_collection.find({'notified': False})
+    for obj in objects:
+        send_notification.delay(obj['_id'])
