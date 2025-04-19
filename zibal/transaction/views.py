@@ -29,7 +29,7 @@ class TransactionListV2APIView(APIView):
             aggregator.set_merchant_id(int(merchant_id))
         aggregator.set_mode(request.GET.get('mode'))
         aggregator.set_type(request.GET.get('type'))
-        aggregator.set_today_date('2024-12-10')
+        aggregator.set_today_date(request.GET.get('today'))
         results = aggregator.combine_documents(transaction_collection, transaction_summary_collection)
         serializer = AggregatedTransactionSerializer(results, many=True)
         return Response(serializer.data)

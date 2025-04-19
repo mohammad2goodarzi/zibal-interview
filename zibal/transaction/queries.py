@@ -2,6 +2,8 @@ from typing import Optional
 
 from datetime import datetime, timedelta
 
+from django.utils import timezone
+
 
 class Mode:
     def get_group_id(self):
@@ -164,14 +166,16 @@ class AggregateDataV2:
     def __init__(self):
         self.merchant_id = None
         self.mode = None
-        self.today = None
+        # this `self.today` is a temporary variable. if you pass this argument, it means today is the date you want.
+        self.today = timezone.now().date().strftime('%Y-%m-%d')
         self.query_type = None
         self.summary_query_type = None
         self.pipeline = []
         self.summary_pipeline = []
 
     def set_today_date(self, today):
-        self.today = today
+        if today:
+            self.today = today
 
     def set_merchant_id(self, merchant_id: Optional[int]):
         self.merchant_id = merchant_id
